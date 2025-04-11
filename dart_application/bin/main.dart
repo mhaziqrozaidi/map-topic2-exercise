@@ -4,6 +4,20 @@
 // Date: April 10, 2025
 // Description: Topic 2 Exercise Sheet
 
+// Question 4
+
+class Car {
+  String carName;
+  String carModel;
+  String carColour;
+
+  Car({required this.carName, required this.carModel, required this.carColour});
+
+  String registrationInfo(String numberPlate, String userID) {
+    return 'Car Name: $carName\nCar Model: $carModel\nCar Colour: $carColour\nNumber Plate: $numberPlate\nUser ID: $userID';
+  }
+}
+
 void main() {
   // Question 1
 
@@ -37,4 +51,11 @@ void main() {
   }
   print(sumWithDefault(a: 5));
   print(sumWithDefault(a: 10, b: 10));
+
+
+  // Question 4
+
+  Car myCar = Car(carName: 'Toyota', carModel: 'Corolla', carColour: 'Red');
+  String info = myCar.registrationInfo('ABC-123', 'User01');
+  print(info);
 }
