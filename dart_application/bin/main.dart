@@ -87,4 +87,12 @@ void main() {
   }
   printName2('Barack', 'Hussein', 'Obama');
   printName2('Barack', 'Obama');
+
+
+  // Question 7
+
+  // (a) Valid
+  // (b) Invalid
+  // (c) Valid
+  // (d) Invalid
 }
