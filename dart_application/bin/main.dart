@@ -5,4 +5,13 @@
 // Description: Topic 2 Exercise Sheet
 
 void main() {
+  // Question 1
+
+  String firstName;
+  String lastName;
+  int num1;
+  double num2;
+  var add1;
+  bool nameState;
+  String? middleName;
 }
