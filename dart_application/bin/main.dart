@@ -58,4 +58,33 @@ void main() {
   Car myCar = Car(carName: 'Toyota', carModel: 'Corolla', carColour: 'Red');
   String info = myCar.registrationInfo('ABC-123', 'User01');
   print(info);
+
+
+  // Question 5(a)
+
+  void printName1(String firstName, String lastName, [String? middleName]) {
+    if (middleName != null) {
+      print('$firstName $middleName $lastName');
+    } else {
+      print('$firstName $lastName');
+    }
+  }
+  printName1('Barack', 'Hussein', 'Obama');
+  printName1('Barack', 'Obama');
+
+
+  // Question 5(b)
+
+  void printName2(String firstName, String lastName, [String? middleName]) {
+    int repeatCount = (middleName != null) ? 5 : 3;
+    String fullName = (middleName != null) 
+        ? '$firstName $middleName $lastName' 
+        : '$firstName $lastName';
+
+    for (var i = 0; i < repeatCount; i++) {
+      print(fullName);
+    }
+  }
+  printName2('Barack', 'Hussein', 'Obama');
+  printName2('Barack', 'Obama');
 }
