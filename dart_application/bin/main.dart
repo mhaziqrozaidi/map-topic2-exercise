@@ -21,4 +21,20 @@ void main() {
   firstName = 'Haziq';
   lastName = 'Rozaidi';
   print('Hello, my name is $firstName $lastName');
+
+
+  // Question 3(a)
+
+  int sum(int a, int b) {
+    return a + b;
+  }
+  print(sum(5, 10));
+
+  // Question 3(b)
+
+  int sumWithDefault({required int a, int b = 0}) {
+    return a + b;
+  }
+  print(sumWithDefault(a: 5));
+  print(sumWithDefault(a: 10, b: 10));
 }
