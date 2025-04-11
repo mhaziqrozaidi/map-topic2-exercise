@@ -14,4 +14,11 @@ void main() {
   var add1;
   bool nameState;
   String? middleName;
+
+
+  // Question 2
+
+  firstName = 'Haziq';
+  lastName = 'Rozaidi';
+  print('Hello, my name is $firstName $lastName');
 }
